@@ -1,0 +1,6 @@
+Enter 5 ages: 22 27 19 17 25
+Ages above average: 27 25
+Maximum age is 27
+Minimum age is 17
+Press any key to continue . . .
+

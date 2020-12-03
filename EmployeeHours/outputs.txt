@@ -1,0 +1,63 @@
+INPUT:
+
+Enter the employee name: Tyler
+Enter hours for Sunday: 8
+Enter hours for Monday: 7
+Enter hours for Tuesday: 6
+Enter hours for Wednesday: 7
+Enter hours for Thursday: 8
+Enter hours for Friday: 7
+Enter hours for Saturday: 8
+
+Enter the employee name: Brooke
+Enter hours for Sunday: 8
+Enter hours for Monday: 7
+Enter hours for Tuesday: 6
+Enter hours for Wednesday: 7
+Enter hours for Thursday: 8
+Enter hours for Friday: 8
+Enter hours for Saturday: 8
+
+Enter the employee name: Scott
+Enter hours for Sunday: 6
+Enter hours for Monday: 8
+Enter hours for Tuesday: 8
+Enter hours for Wednesday: 8
+Enter hours for Thursday: 7
+Enter hours for Friday: 6
+Enter hours for Saturday: 8
+
+Enter the employee name: Ted
+Enter hours for Sunday: 6
+Enter hours for Monday: 7
+Enter hours for Tuesday: 8
+Enter hours for Wednesday: 8
+Enter hours for Thursday: 7
+Enter hours for Friday: 8
+Enter hours for Saturday: 7
+
+Enter the employee name: Ryan
+Enter hours for Sunday: 8
+Enter hours for Monday: 7
+Enter hours for Tuesday: 8
+Enter hours for Wednesday: 7
+Enter hours for Thursday: 8
+Enter hours for Friday: 7
+Enter hours for Saturday: 8
+
+OUTPUT:
+
+         Sunday         Monday        Tuesday      Wednesday       Thursday         Friday       Saturday
+
+_______________________________________________________________________________________________________________
+
+Tyler     6.00           8.00           8.00           8.00           8.00           8.00           12.00          
+
+Brooke    4.50           6.00           7.00           8.00           7.00           8.00           10.50          
+
+Scott     7.50           7.00           8.00           8.00           8.00           8.00           13.50          
+
+Ted       7.50           2.00           7.00           8.00           8.00           8.00           10.50          
+
+Ryan      10.50          8.00           8.00           8.00           6.00           7.00           13.50          
+

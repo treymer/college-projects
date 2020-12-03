@@ -1,0 +1,386 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8EEA8737-2A40-4114-B5FD-5860219BBB1B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BoozeRunProject</RootNamespace>
+    <AssemblyName>BoozeRunProject</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddDeleteCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddDeleteCustomer.Designer.cs">
+      <DependentUpon>AddDeleteCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddDeleteDriverAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddDeleteDriverAdmin.Designer.cs">
+      <DependentUpon>AddDeleteDriverAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BoozeRunDBCustomer.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BoozeRunDBCustomer.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BoozeRunDBDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BoozeRunDBDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BoozeRunDBDataSetCustomer.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BoozeRunDBDataSetCustomer.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BoozeRunDBDataSetOrders.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BoozeRunDBDataSetOrders.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BoozeRunDBOrders.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BoozeRunDBOrders.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="BoozeRunSales.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BoozeRunSales.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="frmAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAbout.Designer.cs">
+      <DependentUpon>frmAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddressShipping.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddressShipping.Designer.cs">
+      <DependentUpon>frmAddressShipping.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAdmin.Designer.cs">
+      <DependentUpon>frmAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBeer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBeer.Designer.cs">
+      <DependentUpon>frmBeer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCheckout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCheckout.Designer.cs">
+      <DependentUpon>frmCheckout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDriver.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDriver.Designer.cs">
+      <DependentUpon>frmDriver.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHome.Designer.cs">
+      <DependentUpon>frmHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPurchase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPurchase.Designer.cs">
+      <DependentUpon>frmPurchase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSalesReportsAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSalesReportsAdmin.Designer.cs">
+      <DependentUpon>frmSalesReportsAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSpirits.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSpirits.Designer.cs">
+      <DependentUpon>frmSpirits.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTrackDriver.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTrackDriver.Designer.cs">
+      <DependentUpon>frmTrackDriver.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmWine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWine.Designer.cs">
+      <DependentUpon>frmWine.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="frmRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRegister.Designer.cs">
+      <DependentUpon>frmRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmShop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmShop.Designer.cs">
+      <DependentUpon>frmShop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmShoppingCart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmShoppingCart.Designer.cs">
+      <DependentUpon>frmShoppingCart.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddDeleteCustomer.resx">
+      <DependentUpon>AddDeleteCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddDeleteDriverAdmin.resx">
+      <DependentUpon>AddDeleteDriverAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAbout.resx">
+      <DependentUpon>frmAbout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddressShipping.resx">
+      <DependentUpon>frmAddressShipping.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAdmin.resx">
+      <DependentUpon>frmAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBeer.resx">
+      <DependentUpon>frmBeer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCheckout.resx">
+      <DependentUpon>frmCheckout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDriver.resx">
+      <DependentUpon>frmDriver.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHome.resx">
+      <DependentUpon>frmHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPurchase.resx">
+      <DependentUpon>frmPurchase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSalesReportsAdmin.resx">
+      <DependentUpon>frmSalesReportsAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSpirits.resx">
+      <DependentUpon>frmSpirits.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTrackDriver.resx">
+      <DependentUpon>frmTrackDriver.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWine.resx">
+      <DependentUpon>frmWine.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="frmRegister.resx">
+      <DependentUpon>frmRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmShop.resx">
+      <DependentUpon>frmShop.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmShoppingCart.resx">
+      <DependentUpon>frmShoppingCart.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="BoozeRunDBCustomer.xsc">
+      <DependentUpon>BoozeRunDBCustomer.xsd</DependentUpon>
+    </None>
+    <None Include="BoozeRunDBCustomer.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BoozeRunDBCustomer.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BoozeRunDBCustomer.xss">
+      <DependentUpon>BoozeRunDBCustomer.xsd</DependentUpon>
+    </None>
+    <None Include="BoozeRunDBDataSet.xsc">
+      <DependentUpon>BoozeRunDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BoozeRunDBDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BoozeRunDBDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BoozeRunDBDataSet.xss">
+      <DependentUpon>BoozeRunDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="BoozeRunDBDataSetCustomer.xsc">
+      <DependentUpon>BoozeRunDBDataSetCustomer.xsd</DependentUpon>
+    </None>
+    <None Include="BoozeRunDBDataSetCustomer.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BoozeRunDBDataSetCustomer.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BoozeRunDBDataSetCustomer.xss">
+      <DependentUpon>BoozeRunDBDataSetCustomer.xsd</DependentUpon>
+    </None>
+    <None Include="BoozeRunDBDataSetOrders.xsc">
+      <DependentUpon>BoozeRunDBDataSetOrders.xsd</DependentUpon>
+    </None>
+    <None Include="BoozeRunDBDataSetOrders.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BoozeRunDBDataSetOrders.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BoozeRunDBDataSetOrders.xss">
+      <DependentUpon>BoozeRunDBDataSetOrders.xsd</DependentUpon>
+    </None>
+    <None Include="BoozeRunDBOrders.xsc">
+      <DependentUpon>BoozeRunDBOrders.xsd</DependentUpon>
+    </None>
+    <None Include="BoozeRunDBOrders.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BoozeRunDBOrders.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BoozeRunDBOrders.xss">
+      <DependentUpon>BoozeRunDBOrders.xsd</DependentUpon>
+    </None>
+    <None Include="BoozeRunSales.xsc">
+      <DependentUpon>BoozeRunSales.xsd</DependentUpon>
+    </None>
+    <None Include="BoozeRunSales.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BoozeRunSales.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="BoozeRunSales.xss">
+      <DependentUpon>BoozeRunSales.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="BoozeRunDB.mdf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="BoozeRunDB_log.ldf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <DependentUpon>BoozeRunDB.mdf</DependentUpon>
+    </Content>
+    <None Include="Resources\spirit5.jpg" />
+    <None Include="Resources\wine5.jpg" />
+    <None Include="Resources\beer5.jpg" />
+    <None Include="Resources\beer2.png" />
+    <None Include="Resources\beerPic.jpg" />
+    <None Include="Resources\chardonnayAll.jpg" />
+    <None Include="Resources\merlotAll.jpg" />
+    <None Include="Resources\cabernetAll.jpg" />
+    <None Include="Resources\whiskeyAll.jpg" />
+    <None Include="Resources\tequilaAll.jpg" />
+    <None Include="Resources\vodkaAll.jpg" />
+    <None Include="Resources\ipaAll.jpg" />
+    <None Include="Resources\importedAll.jpg" />
+    <None Include="Resources\domesticAll.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

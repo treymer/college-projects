@@ -1,0 +1,35 @@
+OUTPUT:
+Insert and delete from beginning:
+First list: 5 20 15
+Second list: 50 200 150
+Absorbed List: 5 20 15 50 200 150
+After inserting new node with value 77: 77 5 20 15 50 200 150
+After deleting node with value 77: 5 20 15 50 200 150
+Does 50 exist in the list?
+Found 50!
+50 5 20 15 200 150
+Reversed list: 150 200 15 20 5 50
+Press any key to continue . . .
+Insert and Delete from the middle:
+First list: 5 20 15
+Second list: 50 200 150
+Absorbed List: 5 20 15 50 200 150
+After inserting new node with value 77: 5 20 15 50 77 200 150
+After deleting node with value 77: 5 20 15 50 200 150
+Does 50 exist in the list?
+Found 50!
+50 5 20 15 200 150
+Reversed list: 150 200 15 20 5 50
+Press any key to continue . . .
+Insert and Delete from the End:
+First list: 5 20 15
+Second list: 50 200 150
+Absorbed List: 5 20 15 50 200 150
+After inserting new node with value 77: 5 20 15 50 200 150 77
+After deleting node with value 77: 5 20 15 50 200 150
+Does 50 exist in the list?
+Found 50!
+50 5 20 15 200 150
+Reversed list: 150 200 15 20 5 50
+Press any key to continue . . .
+

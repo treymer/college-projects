@@ -1,0 +1,17 @@
+For the rectangle ABCD:
+Enter the x and y coordinates of vertex A: 10 7
+Enter the x and y coordinates of vertex B: 20 7
+Enter the x and y coordinates of vertex C: 10 2
+Enter the x and y coordinates of vertex D: 20 2
+A(10.00,7.00)-----------------------------------------B(20.00,7.00)
+      	        |                                                      |
+                      |                                                       |
+                      |                                                       |
+C(10.00,2.00)-----------------------------------------D(20.00,2.00)
+        AB=10.00
+        AC=5.00
+        CD=10.00
+        BD=5.00
+Perimeter = 30.00
+Press any key to continue . . .
+
